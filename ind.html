@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="query.css">
+    <title> ArtWorks Page | SSK </title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="imgs/newjoy.png" class="logo" alt="Joy_Arts">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Find..." class="searchIp">
+                    <img src="imgs/search.png" width="20" height="20" alt="searchIc" class="searchIc">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="suppMe"> ᏗᏗᎴᏂᏗᏒᏗᎷᎧᏕ &#x1f499; </span>
+            </div>
+        </div>
+        <div class="navBot">
+            <h3 id="posters" class="menuItem">Game Posters </h3>
+            <h3 id="logo" class="menuItem"> Logos </h3>
+            <h3 id="heroes" class="menuItem">Superheroes </h3>
+            <h3 id="spidy" class="menuItem">Spiderverse</h3>
+            <h3 id="anime" class="menuItem">Anime</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderwrap">
+            <div class="sliderItem">
+                <img src="imgs/Luna1.png" class="sliderImg" alt="Xquic_Luna">
+                <div class="slideBg"></div>
+                <div class="slideBg bg1"></div>
+                <h1 class="sliderTitle"> Dark Souls : <br> Xquic Luna</h1>
+                <h2 class="sliderPrice"> 29.9 &#8377;</h2>
+                <a href="#art"><button class="buybtn">Buy Now!</button></a>
+                
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/Shinchan1.png" class="sliderImg" alt="Knock Knock!">
+                <div class="slideBg"></div>
+                <div class="slideBg bg1"></div>
+                <h1 class="sliderTitle"> Shinchan : <br> Knock Knock!</h1>
+                <h2 class="sliderPrice"> 9.9 &#8377;</h2>
+                <a href="#art"><button class="buybtn"> Buy Now!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/Bucky1.png" class="sliderImg" alt="Oil Brush">
+                <div class="slideBg"></div>
+                <div class="slideBg bg1"></div>
+                <h1 class="sliderTitle"> Winter Soldier : <br> Anime Bucky </h1>
+                <h2 class="sliderPrice"> 14.9 &#8377;</h2>
+                <a href="#art"><button class="buybtn">Buy Now!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/Miles2.png" class="sliderImg miles" alt="Pencil Sketch">
+                <div class="slideBg"></div>
+                <div class="slideBg bg1"></div>
+                <h1 class="sliderTitle"> Miles : <br> Sketch of Faith</h1>
+                <h2 class="sliderPrice"> 4.9 &#8377;</h2>
+                <a href="#art"><button class="buybtn">Buy Now!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/Goku1.png" class="sliderImg goku" alt="Show'em Saiyan!">
+                <div class="slideBg"></div>
+                <div class="slideBg bg1"></div>
+                <h1 class="sliderTitle">Goku : <br> Show'em <br> Saiyan!</h1>
+                <h2 class="sliderPrice"> 3.9 &#8377;</h2>
+                <a href="#art"><button class="buybtn">Buy Now!</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="Contact">
+        <img src="imgs/Joy.png" class="logo1" alt="Joy_Arts">
+        <div class="contactIc">
+            <img src="imgs/contact.png" class="cntIcon" alt="contactus">
+            <span class="cntTitle"> Contact Me!</span>
+            <span class="cntDesc"> Reach out for any projects or collabs.</span>
+        </div>
+    </div>
+    <div class="art" id="art">
+        <img src="imgs/Luna1.png" alt="" class="artimg">
+        <div class="artDets">
+            <h1 class="artTitle"> Xquic_Luna </h1>
+            <h2 class="artPrice"> 29.9 &#8377;</h2>
+            <p class="artDesc"> An Artwork made using pure paper and pencil, 
+                further elevated by the art of digital editing & modifications. 
+                The result turned out quite Satisfying and interesting concept art.
+                Kind support is very much appreciated! Every artwork bought will be shared in best quality through mail,
+                Buy the artwork now! 
+            </p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <button class="artbtn"> Buy Now! </button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle"> Personal & <br> Payments Info: </h1>
+            <div class="formdiv">
+                <form class="Gform" id="Gform" name="submit-to-google-sheet" method="POST" action="https://script.google.com/macros/s/AKfycbwNgDhm91F4Fm9d1afwDQiWRUapa87CcLaARlCv7VS9mS0pnpOSTYR3f0tiDYmznXcA/exec">
+                    <label for="username"> Name & Surname </label>
+                    <input type="text" name="UserName" placeholder="Your Name" class="payInput" required>
+                    <label for="mail Id"> Contact Mail </label>
+                    <input type="email" name="Email" placeholder="Your Mail Id" class="payInput" required>
+                    <label for="trnsxn Id"> Transaction ID </label>
+                    <input type="password" name="TrnsxnID" placeholder="Payment ID" class="payInput" required maxlength="18">
+                    <label for="Message"> Artwork Name </label>
+                    <input name="Message" placeholder="Heartfelt Thanks &#9829;" type="text" class="payInput" cols="20" required>
+                    <input type="submit" value="submit" class="payInput paybtn" required>
+                    <span id="success"></span>
+                    <span class="close">X</span>
+                </form>
+            </div>
+                <h1 class="payDets"> Payment Info: </h1>
+                <h2 class="payid"> UPI ID: 6303422588@fam </h2>
+                <h2 class="payid"> Acc Holder Name: Sri Swaroop </h2>
+                <img src="imgs/qr.png" alt="Qr-Sri-Swaroop" class="Qr">
+            
+        </div> 
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle im1"> Flow Like water! </h1>
+            <img class="galleryImg im1" src="https://images.pexels.com/photos/954929/pexels-photo-954929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="galimg1">
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle im2"> Drive Like Fire! </h1>
+            <img class="galleryImg im2" src="https://images.pexels.com/photos/216634/pexels-photo-216634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="galimg2">
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle im3"> Think! Sky is your Limit! </h1>
+            <img class="galleryImg im3" src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="galimg3">
+        </div>
+    </div>
+    <div class="comingSoon">
+        <div class="soonItem">
+            <h3 class="soonTitlesm"> More Incoming Artworks..</h3>
+            <h1 class="soonTitle">Clumsy. Chaotic. Creative.</h1>
+            <h1 class="soonTitle joy">Joy_Boy</h1>
+            <a href="#nav">
+                <button class="soonbtn"> Browse Artworks! </button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footLeft">
+            <div class="footMenu">
+                <h1 class="MenuTitle"> | Artworks Page  </h1>
+                <ul class="fMenu">
+                    <a href="#posters" class="flist">Game Posters </a>
+                    <a href="#logo" class="flist">Logos </a>
+                    <a href="#heroes" class="flist">Superheroes</a>
+                    <a href="#spidy" class="flist">Spiderverse </a>
+                    <a href="#anime" class="flist">Anime </a>
+                </ul>
+                <div class="footMenu">
+                    <h1 class="MenuTitle"> | Portfolio Page </h1>
+                    <ul class="fMenu">
+                        <a href="https://main--joyboysskportfolio.netlify.app/" class="flist"> Visit My Website !</a>                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="space">
+        <img src="imgs/Space.png" alt="SpaceLove" class="nsImg">
+    </div>
+ <script src="app.js"></script>
+</body>
+</html>
